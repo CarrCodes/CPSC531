@@ -1,0 +1,1 @@
+var app=angular.module("filters",[]);app.filter("counterValue",function(){return function(b){var a=parseInt(b),c="";if(a>=1000000){a=Math.round(a/1000000);c="M"}else{if(a>=1000){a=Math.round(a/1000);c="K"}}return""+a+c}});

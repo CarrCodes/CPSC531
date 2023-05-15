@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main" if="tar">
+  <echo file="/Users/carr/bin/CPSCFinal/hadoop/hadoop-mapreduce-project/target/dist-maketar.sh">cd &quot;/Users/carr/bin/CPSCFinal/hadoop/hadoop-mapreduce-project/target&quot;
+                  tar cf - hadoop-mapreduce-3.3.5 | gzip &gt; hadoop-mapreduce-3.3.5.tar.gz</echo>
+  <exec failonerror="true" dir="/Users/carr/bin/CPSCFinal/hadoop/hadoop-mapreduce-project/target" executable="bash">
+    <arg line="./dist-maketar.sh"/>
+  </exec>
+</target>
+</project>

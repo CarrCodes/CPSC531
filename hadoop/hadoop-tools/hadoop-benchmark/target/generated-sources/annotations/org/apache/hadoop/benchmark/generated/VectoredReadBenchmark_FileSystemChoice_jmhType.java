@@ -1,0 +1,4 @@
+package org.apache.hadoop.benchmark.generated;
+public class VectoredReadBenchmark_FileSystemChoice_jmhType extends VectoredReadBenchmark_FileSystemChoice_jmhType_B3 {
+}
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main" if="tar">
+  <echo file="/home/carr/hadoop/hadoop-yarn-project/target/dist-maketar.sh">cd &quot;/home/carr/hadoop/hadoop-yarn-project/target&quot;
+                  tar cf - hadoop-yarn-project-3.3.5 | gzip &gt; hadoop-yarn-project-3.3.5.tar.gz</echo>
+  <exec failonerror="true" dir="/home/carr/hadoop/hadoop-yarn-project/target" executable="bash">
+    <arg line="./dist-maketar.sh"/>
+  </exec>
+</target>
+</project>
